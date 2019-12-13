@@ -7,6 +7,7 @@
     <title>Repeater Field Test</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="repeatable-fields.js"></script>
 </head>
 <body>
     <div class="repeat">
@@ -20,15 +21,25 @@
             <tr class="template row">
                 <td width="10%">
                     <span class="move">Move Row</span>
-                    <span class="move-up">Move Up</span>
-                    <input type="text" class="move-steps" value="1" />
-                    <span class="move-down">Move Down</span>
                 </td>
         
                 <td width="10%">An Input Field</td>
                 
                 <td width="70%">
-                    <input type="text" name="an-input-field[{{row-count-placeholder}}]" />
+                    <input type="text" name="inputum[{{row-count-placeholder}}]" />
+                </td>
+                
+                <td width="10%"><span class="remove">Remove</span></td>
+            </tr>
+            <tr class="row">
+                <td width="10%">
+                    <span class="move">Move Row</span>
+                </td>
+        
+                <td width="10%">An Input Field</td>
+                
+                <td width="70%">
+                    <input type="text" name="inputum[0]" />
                 </td>
                 
                 <td width="10%"><span class="remove">Remove</span></td>
